@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://passkeys-demo.appspot.com/ -->
+<html lang="en" class="mdui-theme-auto"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Passkeys Demo</title>
+    <meta name="description" content="Passkeys Demo">
+    <link id="favicon" rel="icon" href="https://passkeys-demo.appspot.com/favicon.svg" type="image/x-icon">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Passkeys Demo_files/bundle.css">
+    <link rel="stylesheet" href="./Passkeys Demo_files/icon">
+    <script src="./Passkeys Demo_files/components-bundle.js"></script>  </head>
+  <body class="mdui-prose" style="padding-top: 64px;">
+    <mdui-top-app-bar scroll-behavior="elevate" variant="small"><template shadowrootmode="open"><!----><slot></slot></template>
+      <mdui-linear-progress id="progress" value="0" max="1"><template shadowrootmode="open"><!----><div part="indicator" class="determinate" style="width:0%;"></div></template></mdui-linear-progress>
+      <mdui-top-app-bar-title><template shadowrootmode="open"><!----><slot part="label" class="label  variant-small "></slot><!--?lit$698476060$--><div part="label-large" class="label-large  variant-small ">Passkeys Demo</div><!--?--></template>Passkeys Demo</mdui-top-app-bar-title>
+      <mdui-button-icon id="code" icon="code" href="https://github.com/GoogleChromeLabs/passkeys-demo" target="_blank" name="" value="" type="button" variant="standard" focused=""><template shadowrootmode="open"><!----><mdui-ripple><template shadowrootmode="open"><!----><div class="surface focused"></div></template></mdui-ripple><!--?lit$698476060$--><a class="_a button" part="button" href="https://github.com/GoogleChromeLabs/passkeys-demo" target="_blank"><!--?lit$698476060$--><mdui-icon part="icon" class="icon" name="code"><template shadowrootmode="open"><!----><span translate="no" style=""><!--?lit$698476060$-->code</span></template></mdui-icon></a> <!--?lit$698476060$--><!--?lit$698476060$--><!--?--><!--?--></template></mdui-button-icon>
+      <mdui-button-icon id="drawer-button" icon="help" name="" value="" type="button" variant="standard"><template shadowrootmode="open"><!----><mdui-ripple><template shadowrootmode="open"><!----><div class="surface   "></div></template></mdui-ripple><!--?lit$698476060$--><button class="_button button" part="button"><!--?lit$698476060$--><mdui-icon part="icon" class="icon" name="help"><template shadowrootmode="open"><!----><span translate="no" style=""><!--?lit$698476060$-->help</span></template></mdui-icon></button> <!--?lit$698476060$--><!--?lit$698476060$--><!--?--><!--?--></template></mdui-button-icon>
+    </mdui-top-app-bar>
+    <mdui-navigation-drawer close-on-esc="" modal="" close-on-overlay-click="" placement="right" id="drawer"><template shadowrootmode="open"><!----><!--?lit$698476060$--><div part="overlay" class="overlay"></div><slot part="panel" class="panel" tabindex="0"></slot></template>
+      <mdui-list><template shadowrootmode="open"><!----><slot></slot></template>
+        <mdui-list-item nonclickable="" alignment="center"><template shadowrootmode="open"><!----><mdui-ripple><template shadowrootmode="open"><!----><div class="surface   "></div></template></mdui-ripple><!--?lit$698476060$--><div part="container" class="container preset"><!--?lit$698476060$--><slot name="custom"><slot name="icon" part="icon" class="icon"><!--?lit$698476060$--><!--?lit$698476060$--><!--?--></slot><div part="body" class="body"><!--?lit$698476060$--><slot part="headline" class="headline"></slot><slot name="description" part="description" class="description"><!--?lit$698476060$--></slot></div><slot name="end-icon" part="end-icon" class="end-icon"><!--?lit$698476060$--><!--?lit$698476060$--><!--?--></slot></slot></div><!--?--></template>
+          <h2 id="help-headline">Sign-in</h2>
+        </mdui-list-item>
+        <mdui-list-item id="help-content" nonclickable="" alignment="center"><template shadowrootmode="open"><!----><mdui-ripple><template shadowrootmode="open"><!----><div class="surface   "></div></template></mdui-ripple><!--?lit$698476060$--><div part="container" class="container preset"><!--?lit$698476060$--><slot name="custom"><slot name="icon" part="icon" class="icon"><!--?lit$698476060$--><!--?lit$698476060$--><!--?--></slot><div part="body" class="body"><!--?lit$698476060$--><slot part="headline" class="headline"></slot><slot name="description" part="description" class="description"><!--?lit$698476060$--></slot></div><slot name="end-icon" part="end-icon" class="end-icon"><!--?lit$698476060$--><!--?lit$698476060$--><!--?--></slot></slot></div><!--?--></template><p>Use your passkey to sign in using <a href="https://developers.google.com/identity/passkeys/use-cases#passkey-autofill-suggestions-in-form-fields">passkeys form
+autofill</a>.</p>
+<p>If you haven't created a passkey yet, sign in with a username and
+password if you haven't created a passkey yet. You can use a random
+username, no account creation is needed. Once you are signed in, create
+a new passkey and sign out to come back here.</p>
+<h3>Sign in with a passkey</h3>
+<p>To sign in, place your cursor on the username field. You'll notice the
+autofill dialog contains your passkeys in addition to passwords. Select
+the passkey you want to sign in with, and perform <a href="https://web.dev/articles/webauthn-user-verification">user
+verification</a> when
+prompted.</p>
+<p>To try <a href="https://developers.google.com/identity/passkeys/use-cases#sign-in-with-a-passkey-button">one-button sign-in
+experience</a>,
+press <strong>Use a one-button sign-in instead</strong> button.</p>
+<h3>Learn more</h3>
+<p>Learn how to build passkeys form autofill experience at <a href="https://web.dev/articles/passkey-form-autofill">Sign in with a
+passkey through form
+autofill</a> and
+<a href="https://developers.google.com/identity/passkeys/developer-guides/server-authentication">Server-side passkey
+authentication</a>.</p>
+<p>You can also learn through a codelab: <a href="https://goo.gle/passkeys-codelab">Implement passkeys with form autofill in a web app</a></p>
+</mdui-list-item>
+      </mdui-list>
+    </mdui-navigation-drawer>
+    <!-- <script src="https://unpkg.com/material-components-web@13.0.0/dist/material-components-web.min.js"></script> -->
+    <div id="help">
+      <div class="help-headline">
+        Sign-in
+      </div>
+      <div class="help-content">
+
+        Use your passkey to sign in using [passkeys form
+        autofill](https://developers.google.com/identity/passkeys/use-cases#passkey-autofill-suggestions-in-form-fields).
+
+        If you haven't created a passkey yet, sign in with a username and
+        password if you haven't created a passkey yet. You can use a random
+        username, no account creation is needed. Once you are signed in, create
+        a new passkey and sign out to come back here.
+
+        ### Sign in with a passkey
+
+        To sign in, place your cursor on the username field. You'll notice the
+        autofill dialog contains your passkeys in addition to passwords. Select
+        the passkey you want to sign in with, and perform [user
+        verification](https://web.dev/articles/webauthn-user-verification) when
+        prompted.
+
+        To try [one-button sign-in
+        experience](https://developers.google.com/identity/passkeys/use-cases#sign-in-with-a-passkey-button),
+        press **Use a one-button sign-in instead** button.
+
+        ### Learn more
+
+        Learn how to build passkeys form autofill experience at [Sign in with a
+        passkey through form
+        autofill](https://web.dev/articles/passkey-form-autofill) and
+        [Server-side passkey
+        authentication](https://developers.google.com/identity/passkeys/developer-guides/server-authentication).
+
+        You can also learn through a codelab: [Implement passkeys with form autofill in a web app](https://goo.gle/passkeys-codelab)
+      </div>
+    </div>
+    <main class="content center">
+      <h2>Enter a username</h2>
+      <form id="form" method="POST" action="https://passkeys-demo.appspot.com/auth/username" class="center">
+        <mdui-text-field type="text" id="username" name="username" autocomplete="username webauthn" label="username" autofocus="" variant="filled"><template shadowrootmode="open"><!----><div part="container" class=" container "><!--?lit$698476060$--><slot name="icon" part="icon" class="icon"><!--?lit$698476060$--><!--?lit$698476060$--><!--?--></slot><slot name="prefix" part="prefix" class="prefix"><!--?lit$698476060$--></slot><div class="input-container"><!--?lit$698476060$--><label part="label" class="label"><!--?lit$698476060$-->username</label> <!--?lit$698476060$--><input part="input" class="input   " type="text" name="username" autocomplete="username webauthn" spellcheck="false"> <!--?lit$698476060$--></div><!--?lit$698476060$--><slot name="suffix" part="suffix" class="suffix"><!--?lit$698476060$--></slot><!--?lit$698476060$--> <!--?lit$698476060$--> <!--?lit$698476060$--><slot name="end-icon" part="end-icon" class="end-icon right-icon"><!--?lit$698476060$--><!--?lit$698476060$--><!--?--></slot></div><!--?lit$698476060$--><!--?--></template></mdui-text-field>
+        <input type="password" class="hidden" name="password">
+        <mdui-button type="submit" name="" value="" variant="filled"><template shadowrootmode="open"><!----><mdui-ripple><template shadowrootmode="open"><!----><div class="surface   "></div></template></mdui-ripple><!--?lit$698476060$--><button class="_button button" part="button"><!--?lit$698476060$--><!----><slot name="icon" part="icon" class="icon"><!--?lit$698476060$--><!--?lit$698476060$--><!--?--></slot><!----><!----><slot part="label" class="label"></slot><!----><!----><slot name="end-icon" part="end-icon" class="end-icon"><!--?lit$698476060$--><!--?lit$698476060$--><!--?--></slot><!----></button><!--?--></template>Next</mdui-button>
+        <mdui-button href="/one-button" variant="text" name="" value="" type="button"><template shadowrootmode="open"><!----><mdui-ripple><template shadowrootmode="open"><!----><div class="surface"></div></template></mdui-ripple><!--?lit$698476060$--><a class="_a button" part="button" href="https://passkeys-demo.appspot.com/one-button"><!--?lit$698476060$--><!----><slot name="icon" part="icon" class="icon"><!--?lit$698476060$--><!--?lit$698476060$--><!--?--></slot><!----><!----><slot part="label" class="label"></slot><!----><!----><slot name="end-icon" part="end-icon" class="end-icon"><!--?lit$698476060$--><!--?lit$698476060$--><!--?--></slot><!----></a><!--?--></template>Use one button sign-in instead</mdui-button>
+      </form>
+    </main>
+    <script type="module">
+      import { $, post, loading, authenticate } from '/client.js';
+
+      const form = $('#form');
+      // When the form is submitted, proceed to the password form.
+      form.addEventListener('submit', async s => {
+        s.preventDefault();
+        const form = new FormData(s.target);
+        const cred = {};
+        form.forEach((v, k) => cred[k] = v);
+        loading.start();
+        post(s.target.action, cred)
+        .then(user => {
+          location.href = '/reauth';
+        }).catch(e => {
+          console.error(e);
+          alert(e.error);
+          loading.stop();
+        });
+      });
+
+      // Feature detection: check if WebAuthn and conditional UI are supported.
+      if (window.PublicKeyCredential) {
+        try {
+          const capabilities = await PublicKeyCredential.getClientCapabilities();
+          if (capabilities.conditionalGet) {
+            // If a conditional UI is supported, invoke the conditional `authenticate()` immediately.
+            const user = await authenticate(true);
+            if (user) {
+              // When the user is signed in, redirect to the home page.
+              $('#username').value = user.username;
+              loading.start();
+              location.href = '/home';
+            } else {
+              throw new Error('User not found.');
+            }
+          }
+        } catch (e) {
+          // `NotAllowedError` indicates a user cancellation.
+          if (e.name !== 'NotAllowedError' && e.name !== 'AbortError') {
+            alert(e.message);
+          }
+          console.error(e);
+          loading.stop();
+        }
+      }
+
+    </script>
+  
+</body></html>
